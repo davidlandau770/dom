@@ -68,12 +68,21 @@ button.addEventListener("click", (event) => {
 })
 // }
 
-let rand = Math.floor(Math.random() * 100 + 1);
+let rand;
+const range = document.getElementById("range");
 const div = document.getElementById("guessing");
 const grade = document.createElement("p");
 div.appendChild(grade);
 const submitButton = document.getElementById("submit");
 const resetButton = document.getElementById("reset");
+
+const save = () => {
+    const from = Number(document.getElementById("from").value);
+    const to = Number(document.getElementById("to").value);
+    rand = Math.floor(Math.random() * (to - from + 1)) + from;
+    div.classList.remove("hidden");
+    range.classList.add("hidden");
+}
 
 const guessing = () => {
     const inputNumber = document.getElementById("inputNumber").value;
@@ -95,9 +104,13 @@ const guessing = () => {
     }
 }
 const reset = () => {
-    const inputNumber = document.getElementById("inputNumber").value = "";
-    rand = Math.floor(Math.random() * 100 + 1);
+    document.getElementById("inputNumber").value = "";
+    document.getElementById("from").value = "";
+    document.getElementById("to").value = "";
+
     div.style.backgroundColor = "#fff"
     resetButton.classList.add("hidden");
     submitButton.classList.remove("hidden");
+    div.classList.add("hidden");
+    range.classList.remove("hidden");
 }

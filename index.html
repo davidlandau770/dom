@@ -54,7 +54,15 @@
         </form>
     </div>
     <h2>guessing</h2>
-    <div id="guessing">
+    <div id="range">
+        <p>Select a range:</p>
+        <label>from:</label>
+        <input id="from" class="range" type="number">
+        <label>to:</label>
+        <input id="to" class="range" type="number"><br>
+        <button id="save" type="submit" onclick=save()>save</button>
+    </div>
+    <div class="hidden" id="guessing">
         <label for="guessing">enter number:</label>
         <input id="inputNumber" type="text" name="guessing">
         <button id="submit" type="submit" onclick=guessing()>submit</button>

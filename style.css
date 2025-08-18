@@ -54,3 +54,18 @@ h2 {
 .hidden {
     display: none;
 }
+
+.range {
+    width: 50px;
+    padding: 5px;
+}
+#range {
+    text-align: center;
+    border: #333 1px solid;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 15px;
+}
+#range button {
+    margin: 15px;
+}
