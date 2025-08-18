@@ -1,0 +1,56 @@
+* {
+    font-family: sans-serif;
+}
+.bgGreen {
+    background-color: green;
+}
+
+.a {
+    background-color: rgb(135, 135, 252);
+}
+
+.b {
+    background-color: rgb(252, 250, 135);
+}
+
+.c {
+    background-color: rgb(252, 153, 140);
+}
+
+.d {
+    background-color: rgb(148, 253, 153);
+}
+
+.input {
+    border: 4px dashed red;
+    padding: 15px;
+    margin: 15px;
+    padding-top: 0;
+}
+
+table {
+    border: 4px dashed rgb(0, 255, 13);
+    padding: 15px;
+    margin: 15px;
+}
+
+.mode {
+    background-color: #333;
+    color: white;
+}
+
+#guessing {
+    border: 4px dashed #9887f7;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+#inputNumber {
+    width: 100px;
+}
+.hidden {
+    display: none;
+}

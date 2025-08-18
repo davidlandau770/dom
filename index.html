@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>hello</h1>
+
+    <div style="background-color: yellow;">
+        <ol id="ol">
+            <li class="li"></li>
+            <li class="li"></li>
+        </ol>
+    </div>
+    <button id="a" class="a" onclick="a()">button 1</button>
+    <button id="b" class="b" onclick="b()">button 2</button>
+    <button id="c" class="c" onclick="c()">button 3</button>
+
+    <div>
+        <p id="green">aaa</p>
+    </div>
+
+    <div class="input">
+        <h1 id="h1">this input</h1>
+        <input id="input" type="text">
+    </div>
+    <button onclick="abc()">click</button>
+
+    <div>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="name">name</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="age">age</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">address</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="send"></td>
+                    <td><button id="button" onclick="mode()">mode</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <h2>guessing</h2>
+    <div id="guessing">
+        <label for="guessing">enter number:</label>
+        <input id="inputNumber" type="text" name="guessing">
+        <button id="submit" type="submit" onclick=guessing()>submit</button>
+        <button id="reset" class="hidden" type="reset" onclick=reset()>reset</button>
+    </div>
+    <script src="main.js" defer></script>
+</body>
+
+</html>
