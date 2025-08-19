@@ -4,13 +4,12 @@ const pDemo = document.createElement("P");
 pDemo.innerText = "text";
 document.body.appendChild(pDemo)
 
-
 const ul = document.createElement("ul");
 for (let i = 0; i < 5; i++) {
     const li = document.createElement("li");
     ul.appendChild(li);
     document.body.appendChild(ul).style.backgroundColor = "red";
-    li.innerText = "li"
+    li.innerText = "abcd"
 }
 
 const ol = document.getElementById("ol");

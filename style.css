@@ -40,7 +40,7 @@ table {
 }
 
 #guessing {
-    border: 4px dashed #9887f7;
+    border: #333 1px solid;
     padding: 15px;
     margin: 15px;
     text-align: center;
@@ -58,6 +58,7 @@ h2 {
 .range {
     width: 50px;
     padding: 5px;
+    margin-right: 10px;
 }
 #range {
     text-align: center;
